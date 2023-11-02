@@ -15,9 +15,7 @@ int connected;
 int segundo = 0; //segundo del minuto en que queremos que emita un dato
 
 static uint8_t  datos[MAX_TRAMA]= { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-String appEui = "A8610A32332E6204"; 
-String appKey = "D41CF616BCF87CFF6930517872F0F024"; 
- 
+
 OneWire  ds(2); 
 DallasTemperature sensorDS18B20(&ds); 
 int temp1; 
