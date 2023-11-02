@@ -1,0 +1,27 @@
+function decodeUplink(input) {
+  var data = {};
+  lat_decode = ((input.bytes[0]) << 24) + ((input.bytes[1]) << 16) + ((input.bytes[2]) << 8) + ((input.bytes[3]));
+  data.a = lat_decode / 10000000;
+  
+  lon_decode = ((input.bytes[4]) << 24) + ((input.bytes[5]) << 16) + ((input.bytes[6]) << 8) + ((input.bytes[7]));
+  data.b = lon_decode / 10000000;
+  data.c =((((input.bytes[8]) << 8) + ((input.bytes[9]))));
+  decode_tempdallas1 = ((((input.bytes[10] << 8) + ((input.bytes[11])))));//
+  decode_tempdallas2 = ((((input.bytes[12] << 8) + ((input.bytes[13])))));//
+  
+  data.tempdallas1 = decode_tempdallas1 - 55;
+  data.tempdallas2 = decode_tempdallas2 - 55;
+  
+  
+  var warnings = [];
+  if (data.altitude < 0) {
+    warnings.push("no hay datos de GPS");
+    
+  }
+
+  return {
+  data: data
+  
+  };
+  
+}
