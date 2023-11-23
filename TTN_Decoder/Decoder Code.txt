@@ -9,7 +9,7 @@ function decodeUplink(input) {
   decode_tempdallas1 = ((((input.bytes[10] << 8) + ((input.bytes[11])))));//
   decode_tempdallas2 = ((((input.bytes[12] << 8) + ((input.bytes[13])))));//
   
-  data.tempdallas1 = decode_tempdallas1 - 55;
+  data.tempdallas1 = decode_tempdallas1 - 55; // Change this number if you modified it in the Arduino Code.
   data.tempdallas2 = decode_tempdallas2 - 55;
   
   
