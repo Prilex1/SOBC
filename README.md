@@ -1,3 +1,6 @@
+![2023-10-28 Servet IX 115](https://github.com/Prilex1/SOBC/assets/83595911/ba05b5ed-d96d-406a-8097-84c0ba7717f2)
+Servet IX Launch
+
 # SOBC (Servet OnBoard Computer)
 Repository for the SOBC project. Lanched at Servet IX, Zaragoza
 English:
