@@ -2,7 +2,7 @@
 Servet IX Launch
 
 # SOBC (Servet OnBoard Computer)
-Repository for the SOBC project. Lanched at Servet IX, Zaragoza
+Repository for the SOBC project. Lanched at Servet IX and Servet X, both near Zaragoza
 English:
 
 The goal of the SOBC project is to create an open-source OnBoard Computer for weather balloon launches. I have completed the development of the first version, which is available in this repository. Feel free to download the code, identify any bugs, or contribute to its improvement. I am open to all suggestions.
